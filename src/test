@@ -1,0 +1,10 @@
+    # Set the time limit
+    model.setParam('TimeLimit', time_limit)
+
+    # Set additional parameters to  speed up the optimization
+    model.setParam('Heuristics', 0.5)
+    model.setParam('MIPFocus', 1)
+    model.setParam('Cuts', 2)
+    model.setParam('Presolve', 2)
+
+    def build_model(places, distance_matrix, warmstart=True, time_limit=300):
