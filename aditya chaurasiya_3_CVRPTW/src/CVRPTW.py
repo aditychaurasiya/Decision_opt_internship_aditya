@@ -18,7 +18,7 @@ orders = order_list_df.to_dict(orient='records')
 travel_matrix = travel_matrix_df.set_index(['source_location_code', 'destination_location_code']).to_dict(orient='index')
 trucks = trucks_df.to_dict(orient='records')
 
-# Assuming constant amount of time spent at each location by trucks
+# Assuming constant amount of time spent at each location by trucks and customer
 service_time_customer = 20
 service_time_depot = 60
 
