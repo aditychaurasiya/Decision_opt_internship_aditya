@@ -1,6 +1,0 @@
-  
-    # Set additional parameters to  speed up the optimization
-    model.setParam('Heuristics', 0.5)
-    model.setParam('MIPFocus', 1)
-    model.setParam('Cuts', 2)
-    model.setParam('Presolve', 2)
