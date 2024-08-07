@@ -2,7 +2,7 @@ import pandas as pd
 import gurobipy as gp
 from gurobipy import GRB
 
-# Load data
+# Loading data
 locations_df = pd.read_csv(r'C:\Users\adity\tsp\Assingment3_CVRPTW\data\MT-CVRPTW_inputs\locations.csv')
 order_list_df = pd.read_excel(r'C:\Users\adity\tsp\Assingment3_CVRPTW\data\MT-CVRPTW_inputs\order_list.xlsx')
 travel_matrix_df = pd.read_csv(r'C:\Users\adity\tsp\Assingment3_CVRPTW\data\MT-CVRPTW_inputs\travel_matrix.csv')
@@ -12,13 +12,13 @@ trucks_df = pd.read_csv(r'C:\Users\adity\tsp\Assingment3_CVRPTW\data\MT-CVRPTW_i
 locations_df['start_minutes'] = pd.to_datetime(locations_df['location_loading_unloading_window_start'], format='%H:%M').dt.hour * 60 + pd.to_datetime(locations_df['location_loading_unloading_window_start'], format='%H:%M').dt.minute
 locations_df['end_minutes'] = pd.to_datetime(locations_df['location_loading_unloading_window_end'], format='%H:%M').dt.hour * 60 + pd.to_datetime(locations_df['location_loading_unloading_window_end'], format='%H:%M').dt.minute
 
-# Extract relevant data
+# Extracting data
 locations = locations_df['location_code'].tolist()
 orders = order_list_df.to_dict(orient='records')
 travel_matrix = travel_matrix_df.set_index(['source_location_code', 'destination_location_code']).to_dict(orient='index')
 trucks = trucks_df.to_dict(orient='records')
 
-# Constants
+# Assuming constant amount of time spent at each location by trucks
 service_time_customer = 20
 service_time_depot = 60
 
@@ -28,7 +28,7 @@ customers = locations[:len(locations)-1]
 # Initialize the Gurobi model
 model = gp.Model("CVRPTW")
 
-# Create decision variables
+# Decision variable
 x = {}
 t = {}
 I = {}
