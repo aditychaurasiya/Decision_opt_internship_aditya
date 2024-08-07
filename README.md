@@ -49,7 +49,7 @@ pip install pandas gurobipy haversine folium
 
 3. **Output**:
    - **Optimal Route**: The script will print the optimal route and the total distance.
-   - **Map Visualization**: The script will generate an HTML file (`tsp_route_2.html`) in the `../output/` directory with an interactive map displaying the route.
+   - **Map Visualization**: The script will generate an HTML file (e.g., `tsp_route_2.html`) in the `../output/` directory with an interactive map displaying the route.
 
 # 2.Capacitated Vehicle Routing Problem with Time Windows (CVRPTW)
 
