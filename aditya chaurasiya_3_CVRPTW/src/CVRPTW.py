@@ -2,7 +2,7 @@ import pandas as pd
 import gurobipy as gp
 from gurobipy import GRB
 
-# Loading data
+# Load data
 locations_df = pd.read_csv(r'C:\Users\adity\tsp\Assingment3_CVRPTW\data\MT-CVRPTW_inputs\locations.csv')
 order_list_df = pd.read_excel(r'C:\Users\adity\tsp\Assingment3_CVRPTW\data\MT-CVRPTW_inputs\order_list.xlsx')
 travel_matrix_df = pd.read_csv(r'C:\Users\adity\tsp\Assingment3_CVRPTW\data\MT-CVRPTW_inputs\travel_matrix.csv')
@@ -12,13 +12,13 @@ trucks_df = pd.read_csv(r'C:\Users\adity\tsp\Assingment3_CVRPTW\data\MT-CVRPTW_i
 locations_df['start_minutes'] = pd.to_datetime(locations_df['location_loading_unloading_window_start'], format='%H:%M').dt.hour * 60 + pd.to_datetime(locations_df['location_loading_unloading_window_start'], format='%H:%M').dt.minute
 locations_df['end_minutes'] = pd.to_datetime(locations_df['location_loading_unloading_window_end'], format='%H:%M').dt.hour * 60 + pd.to_datetime(locations_df['location_loading_unloading_window_end'], format='%H:%M').dt.minute
 
-# Extracting data
+# Extract relevant data
 locations = locations_df['location_code'].tolist()
 orders = order_list_df.to_dict(orient='records')
 travel_matrix = travel_matrix_df.set_index(['source_location_code', 'destination_location_code']).to_dict(orient='index')
 trucks = trucks_df.to_dict(orient='records')
 
-# Assuming constant amount of time spent at each location by trucks and customer
+# # Assuming constant amount of time spent at each location by trucks and customer
 service_time_customer = 20
 service_time_depot = 60
 
@@ -28,7 +28,7 @@ customers = locations[:len(locations)-1]
 # Initialize the Gurobi model
 model = gp.Model("CVRPTW")
 
-# Decision variable
+# Create decision variables
 x = {}
 t = {}
 I = {}
@@ -41,7 +41,34 @@ for k in range(len(trucks)):
                 x[(i, j, k)] = model.addVar(vtype=GRB.BINARY, name=f'x_{i}_{j}_{k}')
         t[(i, k)] = model.addVar(vtype=GRB.CONTINUOUS, name=f't_{i}_{k}', lb=0)
 
-# Objective function: Minimize total distance and fixed costs
+"""# Objective function1: Minimize total distance
+model.setObjective(
+    gp.quicksum(
+        travel_matrix.get((i, j), {}).get('travel_distance_in_km', 0) * x[(i, j, k)]
+        for k in range(len(trucks))
+        for i in locations
+        for j in locations if i != j
+    ), GRB.MINIMIZE
+    # objective value---915.27
+)"""
+
+"""# Objective function 2: Minimize total cost
+model.setObjective(
+    gp.quicksum(
+        int(truck['truck_max_weight']) * 2 * I[k]
+        for k, truck in enumerate(trucks)
+    ), GRB.MINIMIZE
+)    #obj value---330,200"""
+
+# Objective function: Minimize number of vehicles used
+model.setObjective(
+    gp.quicksum(I[k] for k in range(len(trucks))),
+    GRB.MINIMIZE
+)
+# objective value ------19
+
+
+"""# Objective function 4: Minimize total distance and fixed costs
 model.setObjective(
     gp.quicksum(
         travel_matrix.get((i, j), {}).get('travel_distance_in_km', 0) * x[(i, j, k)] * (20000 - int(truck['truck_max_weight']) / 1000)
@@ -52,7 +79,8 @@ model.setObjective(
         int(truck['truck_max_weight']) * 2 * I[k]
         for k, truck in enumerate(trucks)
     ), GRB.MINIMIZE
-)
+)# objective value----18,621,966.446
+"""
 
 # Flow balancing constraint
 for i in customers:
@@ -113,6 +141,8 @@ for k in range(len(trucks)):
         for j in locations:
             if i != j:
                 model.addConstr(I[k] >= x[(i, j, k)], name=f"Linking_{i}_{j}_{k}")
+
+
 
 # Solve the problem
 model.optimize()
