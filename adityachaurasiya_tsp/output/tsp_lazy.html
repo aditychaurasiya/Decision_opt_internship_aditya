@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ea1701c9d1189f7b5bdc0fc1a44850b6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ea1701c9d1189f7b5bdc0fc1a44850b6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ea1701c9d1189f7b5bdc0fc1a44850b6 = L.map(
+                "map_ea1701c9d1189f7b5bdc0fc1a44850b6",
+                {
+                    center: [12.12, 76.68],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c0d0e4b80270d4fb9485393d3fdbc1b4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_c0d0e4b80270d4fb9485393d3fdbc1b4.addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var marker_f12e9e261bf29a04afb6c943588757b7 = L.marker(
+                [12.12, 76.68],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_b609a4b233fca753f904f61701bc7ccf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_f12e9e261bf29a04afb6c943588757b7.setIcon(icon_b609a4b233fca753f904f61701bc7ccf);
+        
+    
+            marker_f12e9e261bf29a04afb6c943588757b7.bindTooltip(
+                `<div>
+                     Nanjangud, Mysore, Karnataka, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c32b23a4a35b2fb520af932e511c0bc = L.marker(
+                [12.651805, 77.208946],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_252db47f3ca63b2add11976ee2a4102a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_3c32b23a4a35b2fb520af932e511c0bc.setIcon(icon_252db47f3ca63b2add11976ee2a4102a);
+        
+    
+            marker_3c32b23a4a35b2fb520af932e511c0bc.bindTooltip(
+                `<div>
+                     Channapatna, Karnataka, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51d1e4254017811479351bea7d0779e2 = L.marker(
+                [12.715035, 77.281296],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_a68f0fb18e98a405d5073947dc3d7e26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_51d1e4254017811479351bea7d0779e2.setIcon(icon_a68f0fb18e98a405d5073947dc3d7e26);
+        
+    
+            marker_51d1e4254017811479351bea7d0779e2.bindTooltip(
+                `<div>
+                     Ramanagara, Karnataka, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6d732d2ee1ccb800622494c97ab4be2 = L.marker(
+                [13.432515, 77.727478],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_00d38cf8bb303fd5c202802ada1d28a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_b6d732d2ee1ccb800622494c97ab4be2.setIcon(icon_00d38cf8bb303fd5c202802ada1d28a4);
+        
+    
+            marker_b6d732d2ee1ccb800622494c97ab4be2.bindTooltip(
+                `<div>
+                     Chikkaballapura, Karnataka, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_17807607ade5fb801ca12a7777e85a8d = L.marker(
+                [13.583274, 76.540154],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_d7732994fc3f0f56285a95deec2804fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_17807607ade5fb801ca12a7777e85a8d.setIcon(icon_d7732994fc3f0f56285a95deec2804fc);
+        
+    
+            marker_17807607ade5fb801ca12a7777e85a8d.bindTooltip(
+                `<div>
+                     Huliyar, Karnataka, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b950e08f31dcdcde7176d5e34747b9c = L.marker(
+                [13.340881, 74.742142],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_a5028fb56df9ebff951b53980929dfd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_5b950e08f31dcdcde7176d5e34747b9c.setIcon(icon_a5028fb56df9ebff951b53980929dfd1);
+        
+    
+            marker_5b950e08f31dcdcde7176d5e34747b9c.bindTooltip(
+                `<div>
+                     Udupi, Karnataka, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77e45851e80e28befdcb47950625c1c5 = L.marker(
+                [14.16704, 75.040298],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_f53e78fbf88d4d1ea059d120d256ee08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_77e45851e80e28befdcb47950625c1c5.setIcon(icon_f53e78fbf88d4d1ea059d120d256ee08);
+        
+    
+            marker_77e45851e80e28befdcb47950625c1c5.bindTooltip(
+                `<div>
+                     Sagar, Karnataka, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d944212c7cd5cbc816f43080fa12aab = L.marker(
+                [14.530457, 75.801094],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_b6d533088c8b1cbc036a91d2f063c745 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_6d944212c7cd5cbc816f43080fa12aab.setIcon(icon_b6d533088c8b1cbc036a91d2f063c745);
+        
+    
+            marker_6d944212c7cd5cbc816f43080fa12aab.bindTooltip(
+                `<div>
+                     Harihar, Karnataka, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c61e555db952cef444449104c11f429 = L.marker(
+                [14.623801, 75.621788],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_9ff7d971e3d2b2ef765af0574c6c71b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_4c61e555db952cef444449104c11f429.setIcon(icon_9ff7d971e3d2b2ef765af0574c6c71b9);
+        
+    
+            marker_4c61e555db952cef444449104c11f429.bindTooltip(
+                `<div>
+                     Ranebennur, Karnataka, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2b032d995c51f3e89d05ede2b1fcaf3 = L.marker(
+                [15.852792, 74.498703],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_820db1257b1160fe4d03c3e31fa42981 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_c2b032d995c51f3e89d05ede2b1fcaf3.setIcon(icon_820db1257b1160fe4d03c3e31fa42981);
+        
+    
+            marker_c2b032d995c51f3e89d05ede2b1fcaf3.bindTooltip(
+                `<div>
+                     Belgaum, Karnataka, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6822dd0ae937d5556329d3fe5274f0e = L.marker(
+                [16.994444, 73.300003],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_d507ae3e5c2f3447ca29fb9c10fb91db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_c6822dd0ae937d5556329d3fe5274f0e.setIcon(icon_d507ae3e5c2f3447ca29fb9c10fb91db);
+        
+    
+            marker_c6822dd0ae937d5556329d3fe5274f0e.bindTooltip(
+                `<div>
+                     Ratnagiri, Maharashtra, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4213da81e47794a70cb046cebf7aa5d = L.marker(
+                [16.779877, 74.556374],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_a065e9a97499683a49f38898886943d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_a4213da81e47794a70cb046cebf7aa5d.setIcon(icon_a065e9a97499683a49f38898886943d3);
+        
+    
+            marker_a4213da81e47794a70cb046cebf7aa5d.bindTooltip(
+                `<div>
+                     Jaysingpur, Maharashtra, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a506a4df354f207d9e4e7edb4ed5ac2 = L.marker(
+                [16.1667, 74.833298],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_48ef11ce42cad52590aea168bf3841da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_5a506a4df354f207d9e4e7edb4ed5ac2.setIcon(icon_48ef11ce42cad52590aea168bf3841da);
+        
+    
+            marker_5a506a4df354f207d9e4e7edb4ed5ac2.bindTooltip(
+                `<div>
+                     Gokak, Karnataka, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54206e33424dba4b6745f47331e41db7 = L.marker(
+                [15.756595, 76.192696],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_cf206ff134535b3c1872618ce1727aad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_54206e33424dba4b6745f47331e41db7.setIcon(icon_cf206ff134535b3c1872618ce1727aad);
+        
+    
+            marker_54206e33424dba4b6745f47331e41db7.bindTooltip(
+                `<div>
+                     Kushtagi, Karnataka, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e07944520319216c4f3c35a558ec7148 = L.marker(
+                [15.167409, 77.373627],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_dd888b4bcc7ee1d436a193cc2f6c7b43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e07944520319216c4f3c35a558ec7148.setIcon(icon_dd888b4bcc7ee1d436a193cc2f6c7b43);
+        
+    
+            marker_e07944520319216c4f3c35a558ec7148.bindTooltip(
+                `<div>
+                     Guntakal, Andhra Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ba3b4ac2523930d497c8a494d1b7f94 = L.marker(
+                [14.413745, 77.712616],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_64a1055f84a172fcbc39fde59f3810b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_7ba3b4ac2523930d497c8a494d1b7f94.setIcon(icon_64a1055f84a172fcbc39fde59f3810b8);
+        
+    
+            marker_7ba3b4ac2523930d497c8a494d1b7f94.bindTooltip(
+                `<div>
+                     Dharmavaram, Andhra Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4eefc5a542388264f3f82532cd3359e = L.marker(
+                [14.752805, 78.552757],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_f397cc755775f47c583c32f014f326cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_d4eefc5a542388264f3f82532cd3359e.setIcon(icon_f397cc755775f47c583c32f014f326cc);
+        
+    
+            marker_d4eefc5a542388264f3f82532cd3359e.bindTooltip(
+                `<div>
+                     Proddatur, Andhra Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be443cce69e8086a813621b0291c8294 = L.marker(
+                [15.478569, 78.483093],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_ea0a68cf603eb70c4a1ce5aec4cafb54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_be443cce69e8086a813621b0291c8294.setIcon(icon_ea0a68cf603eb70c4a1ce5aec4cafb54);
+        
+    
+            marker_be443cce69e8086a813621b0291c8294.bindTooltip(
+                `<div>
+                     Nandyal, Andhra Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e496e2a5f042faaabefea5f7ae66e8cd = L.marker(
+                [15.764501, 79.259491],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_e97d9574154fd502415b7d1d4ba11127 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e496e2a5f042faaabefea5f7ae66e8cd.setIcon(icon_e97d9574154fd502415b7d1d4ba11127);
+        
+    
+            marker_e496e2a5f042faaabefea5f7ae66e8cd.bindTooltip(
+                `<div>
+                     Markapur, Andhra Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c6ba7240123268011f0a45c2314f825 = L.marker(
+                [17.143908, 79.623924],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_f5ac1920fcf828319caf504a118f0213 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4c6ba7240123268011f0a45c2314f825.setIcon(icon_f5ac1920fcf828319caf504a118f0213);
+        
+    
+            marker_4c6ba7240123268011f0a45c2314f825.bindTooltip(
+                `<div>
+                     Suryapet, Telangana, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a94d02f2c1d179b941c23466fb0eb632 = L.marker(
+                [18.101904, 78.852074],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_5637b7328a92e84a0581530e58ab8f65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_a94d02f2c1d179b941c23466fb0eb632.setIcon(icon_5637b7328a92e84a0581530e58ab8f65);
+        
+    
+            marker_a94d02f2c1d179b941c23466fb0eb632.bindTooltip(
+                `<div>
+                     Siddipet, Telangana, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea3e873c308a65d2098e139da0173bf1 = L.marker(
+                [18.245655, 76.505356],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_d191eac6361ffde8d3762d7b6ea9983f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ea3e873c308a65d2098e139da0173bf1.setIcon(icon_d191eac6361ffde8d3762d7b6ea9983f);
+        
+    
+            marker_ea3e873c308a65d2098e139da0173bf1.bindTooltip(
+                `<div>
+                     Ausa, Maharashtra, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac793a023e9dd9d766667ef602b9d5d2 = L.marker(
+                [19.487707, 75.380768],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_4c63bb1effcbd846119967c07be0c6c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_ac793a023e9dd9d766667ef602b9d5d2.setIcon(icon_4c63bb1effcbd846119967c07be0c6c0);
+        
+    
+            marker_ac793a023e9dd9d766667ef602b9d5d2.bindTooltip(
+                `<div>
+                     Saint Dnyaneshwar Garden and Paithan park, Paithen, Maharashtra, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c95da76bbb9f57b354d4224bcdf1467a = L.marker(
+                [19.85306, 74.000633],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_4b67144517866cca1d3e205437549cf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c95da76bbb9f57b354d4224bcdf1467a.setIcon(icon_4b67144517866cca1d3e205437549cf2);
+        
+    
+            marker_c95da76bbb9f57b354d4224bcdf1467a.bindTooltip(
+                `<div>
+                     Sinnar, Maharashtra, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4aa1a1329a7532f10a45d64869b8bbe3 = L.marker(
+                [19.186354, 73.191948],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_342406308952fae75e5ee48c89535397 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_4aa1a1329a7532f10a45d64869b8bbe3.setIcon(icon_342406308952fae75e5ee48c89535397);
+        
+    
+            marker_4aa1a1329a7532f10a45d64869b8bbe3.bindTooltip(
+                `<div>
+                     Ambernath, Maharashtra, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3efa62911b4326743e3d93922a0958f = L.marker(
+                [18.901457, 73.176132],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_7a7450dc898254a32c0bc716768deee8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b3efa62911b4326743e3d93922a0958f.setIcon(icon_7a7450dc898254a32c0bc716768deee8);
+        
+    
+            marker_b3efa62911b4326743e3d93922a0958f.bindTooltip(
+                `<div>
+                     Rasayani, Maharashtra, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56a1ad85968e604bb13381e043570bbe = L.marker(
+                [19.07609, 72.877426],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_38ad53a033f3fa8f1bb911b15d91b9b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_56a1ad85968e604bb13381e043570bbe.setIcon(icon_38ad53a033f3fa8f1bb911b15d91b9b2);
+        
+    
+            marker_56a1ad85968e604bb13381e043570bbe.bindTooltip(
+                `<div>
+                     Mumbai, Maharashtra, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_409c682437431a030bc37116b62d5afc = L.marker(
+                [19.155001, 72.849998],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_b44a2e340661221c7034239029492052 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_409c682437431a030bc37116b62d5afc.setIcon(icon_b44a2e340661221c7034239029492052);
+        
+    
+            marker_409c682437431a030bc37116b62d5afc.bindTooltip(
+                `<div>
+                     Goregaon, Mumbai, Maharashtra, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b56141d9dfe4f7e6ac9f960356be8cd1 = L.marker(
+                [21.105001, 71.771645],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_2403a86a974a2d4db999aa08d824afa0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_b56141d9dfe4f7e6ac9f960356be8cd1.setIcon(icon_2403a86a974a2d4db999aa08d824afa0);
+        
+    
+            marker_b56141d9dfe4f7e6ac9f960356be8cd1.bindTooltip(
+                `<div>
+                     Mahuva, Gujarat, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a535fbc98b96fb372818a659bd8cfb3 = L.marker(
+                [21.761524, 70.627625],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_eda749c3b1643c36b5137abdfad37952 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7a535fbc98b96fb372818a659bd8cfb3.setIcon(icon_eda749c3b1643c36b5137abdfad37952);
+        
+    
+            marker_7a535fbc98b96fb372818a659bd8cfb3.bindTooltip(
+                `<div>
+                     Jetpur, Gujarat, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e86a5cb1b97016da9f702587bf3225a = L.marker(
+                [21.961946, 70.792297],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_51fa3ea010b51fab1292b3c8ad6b5a67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_8e86a5cb1b97016da9f702587bf3225a.setIcon(icon_51fa3ea010b51fab1292b3c8ad6b5a67);
+        
+    
+            marker_8e86a5cb1b97016da9f702587bf3225a.bindTooltip(
+                `<div>
+                     Gondal, Gujarat, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fe25d5a7229c02e16f0de95a473f4d7 = L.marker(
+                [22.728392, 71.637077],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_a785a2eda6d8799ceea3f02ee0097d37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_2fe25d5a7229c02e16f0de95a473f4d7.setIcon(icon_a785a2eda6d8799ceea3f02ee0097d37);
+        
+    
+            marker_2fe25d5a7229c02e16f0de95a473f4d7.bindTooltip(
+                `<div>
+                     Surendranagar, Gujarat, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9139f148c582a0e541585d63c74c1e83 = L.marker(
+                [23.849325, 72.126625],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_953090fbab4e8e9ad4ccaa546f025cdd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_9139f148c582a0e541585d63c74c1e83.setIcon(icon_953090fbab4e8e9ad4ccaa546f025cdd);
+        
+    
+            marker_9139f148c582a0e541585d63c74c1e83.bindTooltip(
+                `<div>
+                     Patan, Gujarat, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1a12dc0e445cd425b1475ae73d778020 = L.marker(
+                [23.597969, 72.969818],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_0aeab47707cf3876ebaa8fa54f2f6953 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1a12dc0e445cd425b1475ae73d778020.setIcon(icon_0aeab47707cf3876ebaa8fa54f2f6953);
+        
+    
+            marker_1a12dc0e445cd425b1475ae73d778020.bindTooltip(
+                `<div>
+                     Himmatnagar, Gujarat, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e1af3e9676c0572681d8beea4eb1843 = L.marker(
+                [23.546757, 74.43383],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_24f7e6cd7a8dd55a74a1fdf96af0a233 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7e1af3e9676c0572681d8beea4eb1843.setIcon(icon_24f7e6cd7a8dd55a74a1fdf96af0a233);
+        
+    
+            marker_7e1af3e9676c0572681d8beea4eb1843.bindTooltip(
+                `<div>
+                     Banswara, Rajasthan, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c654f95e0797e313634f5cc9c5f9caf9 = L.marker(
+                [23.486839, 75.659157],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_c73b649205353cfbb27efd024ab42bcd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_c654f95e0797e313634f5cc9c5f9caf9.setIcon(icon_c73b649205353cfbb27efd024ab42bcd);
+        
+    
+            marker_c654f95e0797e313634f5cc9c5f9caf9.bindTooltip(
+                `<div>
+                     Mahidpur, Madhya Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b0ef763296258ed4796c27174fe8a01 = L.marker(
+                [24.879999, 74.629997],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_1174db36718b69f585d85ea713e66651 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_2b0ef763296258ed4796c27174fe8a01.setIcon(icon_1174db36718b69f585d85ea713e66651);
+        
+    
+            marker_2b0ef763296258ed4796c27174fe8a01.bindTooltip(
+                `<div>
+                     Chittorgarh, Rajasthan, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa5bb7b3f96f1c508b6e2d77dbba940f = L.marker(
+                [24.7945, 73.055],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_1b7efe6652eb4f4318dea88936a3ab8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_fa5bb7b3f96f1c508b6e2d77dbba940f.setIcon(icon_1b7efe6652eb4f4318dea88936a3ab8a);
+        
+    
+            marker_fa5bb7b3f96f1c508b6e2d77dbba940f.bindTooltip(
+                `<div>
+                     Pindwara, Rajasthan, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c278cf4cd9667f15e6e5085cfc954761 = L.marker(
+                [24.882618, 72.858894],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_abe63218a8f647a0c0e3fb35cdc90d18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_c278cf4cd9667f15e6e5085cfc954761.setIcon(icon_abe63218a8f647a0c0e3fb35cdc90d18);
+        
+    
+            marker_c278cf4cd9667f15e6e5085cfc954761.bindTooltip(
+                `<div>
+                     Sirohi, Rajasthan, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e8d44f62498d5a9cdf8ccc40fcbcfcb = L.marker(
+                [25.771315, 73.323685],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_2a444e8aa4c4622b311869cedb325bc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_4e8d44f62498d5a9cdf8ccc40fcbcfcb.setIcon(icon_2a444e8aa4c4622b311869cedb325bc4);
+        
+    
+            marker_4e8d44f62498d5a9cdf8ccc40fcbcfcb.bindTooltip(
+                `<div>
+                     Pali, Rajasthan, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eab5da0a1e0d08f41ecfc13dec84e3e0 = L.marker(
+                [28.440554, 74.493011],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_ac871b21773143e61f6e49a69e536fb9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_eab5da0a1e0d08f41ecfc13dec84e3e0.setIcon(icon_ac871b21773143e61f6e49a69e536fb9);
+        
+    
+            marker_eab5da0a1e0d08f41ecfc13dec84e3e0.bindTooltip(
+                `<div>
+                     Sardarshahar, Rajasthan, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_296f23a40d001b0f9bd4820726002179 = L.marker(
+                [30.525005, 75.890121],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_3c250c95bda3251f6a3694b2aee541e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_296f23a40d001b0f9bd4820726002179.setIcon(icon_3c250c95bda3251f6a3694b2aee541e1);
+        
+    
+            marker_296f23a40d001b0f9bd4820726002179.bindTooltip(
+                `<div>
+                     Malerkotla, Punjab, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bac85dac595794b5c0d8a82df2d4840c = L.marker(
+                [32.041943, 75.405334],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_6036ade77363297de6890954f453caff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_bac85dac595794b5c0d8a82df2d4840c.setIcon(icon_6036ade77363297de6890954f453caff);
+        
+    
+            marker_bac85dac595794b5c0d8a82df2d4840c.bindTooltip(
+                `<div>
+                     Gurdaspur, Punjab, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_578de912d83f092823a419f418a39589 = L.marker(
+                [30.172716, 77.299492],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_1934d7bfc3e5c6545a48b8c9b1309944 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_578de912d83f092823a419f418a39589.setIcon(icon_1934d7bfc3e5c6545a48b8c9b1309944);
+        
+    
+            marker_578de912d83f092823a419f418a39589.bindTooltip(
+                `<div>
+                     Jagadhri, Haryana, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe0140bbe7fa9b0dbc6609bf016f2a7d = L.marker(
+                [29.854263, 77.888],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_cfee29cedb064377de393d55b0222ad8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_fe0140bbe7fa9b0dbc6609bf016f2a7d.setIcon(icon_cfee29cedb064377de393d55b0222ad8);
+        
+    
+            marker_fe0140bbe7fa9b0dbc6609bf016f2a7d.bindTooltip(
+                `<div>
+                     Roorkee, Uttarakhand, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_14325787108ee33543b18271933aad0a = L.marker(
+                [29.138407, 76.693245],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_48d1e0a75abbaef42765251f3bc85179 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_14325787108ee33543b18271933aad0a.setIcon(icon_48d1e0a75abbaef42765251f3bc85179);
+        
+    
+            marker_14325787108ee33543b18271933aad0a.bindTooltip(
+                `<div>
+                     Gohana, Haryana, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92d97cd0c110384aa0d032b8695f9e42 = L.marker(
+                [28.679079, 77.06971],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_8cfdfe57c08b88ab6669b785703c4bd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_92d97cd0c110384aa0d032b8695f9e42.setIcon(icon_8cfdfe57c08b88ab6669b785703c4bd2);
+        
+    
+            marker_92d97cd0c110384aa0d032b8695f9e42.bindTooltip(
+                `<div>
+                     Delhi, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69e1ccc2b1de9bbc219d8307db7dc146 = L.marker(
+                [28.148735, 77.332024],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_df44e702d67bf8983f587fb378f58e52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_69e1ccc2b1de9bbc219d8307db7dc146.setIcon(icon_df44e702d67bf8983f587fb378f58e52);
+        
+    
+            marker_69e1ccc2b1de9bbc219d8307db7dc146.bindTooltip(
+                `<div>
+                     Palwal, Haryana, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59890b781c361057a6092f7cd381ed8c = L.marker(
+                [27.897551, 77.384117],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_db8285f4b44bbdd879ac551fbfc0de05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_59890b781c361057a6092f7cd381ed8c.setIcon(icon_db8285f4b44bbdd879ac551fbfc0de05);
+        
+    
+            marker_59890b781c361057a6092f7cd381ed8c.bindTooltip(
+                `<div>
+                     Hodal, Haryana, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c142ad7bf1b9ccd5789ee29169dccca = L.marker(
+                [27.108416, 78.584602],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_04d50d15337cccca47f3ab7fbe66f730 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_9c142ad7bf1b9ccd5789ee29169dccca.setIcon(icon_04d50d15337cccca47f3ab7fbe66f730);
+        
+    
+            marker_9c142ad7bf1b9ccd5789ee29169dccca.bindTooltip(
+                `<div>
+                     Shikohabad, Uttar Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1932716a847bfe9ed5119842b2ee33ba = L.marker(
+                [28.590361, 78.571762],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_97080f4b391598f2902f35903604c4c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_1932716a847bfe9ed5119842b2ee33ba.setIcon(icon_97080f4b391598f2902f35903604c4c6);
+        
+    
+            marker_1932716a847bfe9ed5119842b2ee33ba.bindTooltip(
+                `<div>
+                     Sambhal, Uttar Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b4c9960ca40a53fd14f306361f7898c = L.marker(
+                [28.078636, 80.471588],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_c16baa5482906ca9ce6fcc7591bcb7b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_8b4c9960ca40a53fd14f306361f7898c.setIcon(icon_c16baa5482906ca9ce6fcc7591bcb7b8);
+        
+    
+            marker_8b4c9960ca40a53fd14f306361f7898c.bindTooltip(
+                `<div>
+                     Gola Gokarannath, Uttar Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93eb4e8e6cb21628238c09a875f194bc = L.marker(
+                [26.85, 80.949997],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_52c5be7638be08e1d1b845c5231d5efa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_93eb4e8e6cb21628238c09a875f194bc.setIcon(icon_52c5be7638be08e1d1b845c5231d5efa);
+        
+    
+            marker_93eb4e8e6cb21628238c09a875f194bc.bindTooltip(
+                `<div>
+                     Lucknow, Uttar Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1d263e0b64ca5c7fa95d4571f06c30b = L.marker(
+                [25.989836, 79.450035],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_a7af9a914dbd6aff188dcba759deff70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_c1d263e0b64ca5c7fa95d4571f06c30b.setIcon(icon_a7af9a914dbd6aff188dcba759deff70);
+        
+    
+            marker_c1d263e0b64ca5c7fa95d4571f06c30b.bindTooltip(
+                `<div>
+                     Orai, Uttar Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_060431058c3a0918b5390c15566ba1d5 = L.marker(
+                [22.744108, 77.736969],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_a768b15da8eae8afd890b0f5b23d1d58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_060431058c3a0918b5390c15566ba1d5.setIcon(icon_a768b15da8eae8afd890b0f5b23d1d58);
+        
+    
+            marker_060431058c3a0918b5390c15566ba1d5.bindTooltip(
+                `<div>
+                     Hoshangabad, Madhya Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a2d7732f86e71721e3d9d33064a13d4 = L.marker(
+                [21.045521, 75.801094],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_4211f8c8400f57bbfe0f8b8cf58def18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0a2d7732f86e71721e3d9d33064a13d4.setIcon(icon_4211f8c8400f57bbfe0f8b8cf58def18);
+        
+    
+            marker_0a2d7732f86e71721e3d9d33064a13d4.bindTooltip(
+                `<div>
+                     Bhusawal, Maharashtra, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13007901ee7388c9b28739da077be375 = L.marker(
+                [21.04954, 76.532028],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_3ccde4ee29b5bf129cefdc31d527fdb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_13007901ee7388c9b28739da077be375.setIcon(icon_3ccde4ee29b5bf129cefdc31d527fdb0);
+        
+    
+            marker_13007901ee7388c9b28739da077be375.bindTooltip(
+                `<div>
+                     Jalgaon Jamod, Maharashtra, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f861218a624d637a7cd4a6c365d72482 = L.marker(
+                [20.388794, 78.120407],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_7f9e8d6367ea59139b419edca028c1b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_f861218a624d637a7cd4a6c365d72482.setIcon(icon_7f9e8d6367ea59139b419edca028c1b9);
+        
+    
+            marker_f861218a624d637a7cd4a6c365d72482.bindTooltip(
+                `<div>
+                     Yavatmal, Maharashtra, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56989e69e8dd76c649a061bc71d1cc30 = L.marker(
+                [21.190449, 81.28492],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_ef2c91a8147513459f2f325a8412ced6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_56989e69e8dd76c649a061bc71d1cc30.setIcon(icon_ef2c91a8147513459f2f325a8412ced6);
+        
+    
+            marker_56989e69e8dd76c649a061bc71d1cc30.bindTooltip(
+                `<div>
+                     Durg, Chhattisgarh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_936e60ddafdca2d61464e09cdaebc66b = L.marker(
+                [21.25, 81.629997],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_00057d5fae7176b653afc07e1dd64e74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_936e60ddafdca2d61464e09cdaebc66b.setIcon(icon_00057d5fae7176b653afc07e1dd64e74);
+        
+    
+            marker_936e60ddafdca2d61464e09cdaebc66b.bindTooltip(
+                `<div>
+                     Raipur, Chhattisgarh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6af793fbdafcc68cf4ecc8fda3a0834 = L.marker(
+                [23.173939, 81.565125],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_82686017f686c3fd2513bbd9766fd7f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a6af793fbdafcc68cf4ecc8fda3a0834.setIcon(icon_82686017f686c3fd2513bbd9766fd7f7);
+        
+    
+            marker_a6af793fbdafcc68cf4ecc8fda3a0834.bindTooltip(
+                `<div>
+                     Dhanpuri, Madhya Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ac61c2dcd27bb93cbbebdf482027af6 = L.marker(
+                [23.223047, 82.87056],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_b298f067bf8706681f9b8b115b1ee467 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_2ac61c2dcd27bb93cbbebdf482027af6.setIcon(icon_b298f067bf8706681f9b8b115b1ee467);
+        
+    
+            marker_2ac61c2dcd27bb93cbbebdf482027af6.bindTooltip(
+                `<div>
+                     Surajpur, Chhattisgarh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e80e8db51d7354dc0ac170ee1e1b898 = L.marker(
+                [23.344315, 85.296013],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_c29d16268bf86e9029647305eec806f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_9e80e8db51d7354dc0ac170ee1e1b898.setIcon(icon_c29d16268bf86e9029647305eec806f9);
+        
+    
+            marker_9e80e8db51d7354dc0ac170ee1e1b898.bindTooltip(
+                `<div>
+                     Ranchi, Jharkhand, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4cc188f27be86ee885ff6c9a7ae8a572 = L.marker(
+                [23.669296, 86.151115],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_afddd84186f0f2e9f87a8a7e4e5a2ffe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_4cc188f27be86ee885ff6c9a7ae8a572.setIcon(icon_afddd84186f0f2e9f87a8a7e4e5a2ffe);
+        
+    
+            marker_4cc188f27be86ee885ff6c9a7ae8a572.bindTooltip(
+                `<div>
+                     Bokaro Steel City, Jharkhand, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_883272795b7446c4a272e823cb2d342b = L.marker(
+                [24.47438, 85.688744],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_dfbc528949ba1ae160ad30b5ea70a086 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_883272795b7446c4a272e823cb2d342b.setIcon(icon_dfbc528949ba1ae160ad30b5ea70a086);
+        
+    
+            marker_883272795b7446c4a272e823cb2d342b.bindTooltip(
+                `<div>
+                     Domchanch, Jharkhand, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8e4406b5cbeafe10d0c460fed26ca84 = L.marker(
+                [25.369179, 85.53006],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_04f920ff15f2574a2dd6afca64f6208d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a8e4406b5cbeafe10d0c460fed26ca84.setIcon(icon_04f920ff15f2574a2dd6afca64f6208d);
+        
+    
+            marker_a8e4406b5cbeafe10d0c460fed26ca84.bindTooltip(
+                `<div>
+                     Harnaut, Bihar, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96f52584c576740ac35bc47113b73cdb = L.marker(
+                [25.477585, 85.709091],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_aa5237bff77628f4246858f3054e46fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_96f52584c576740ac35bc47113b73cdb.setIcon(icon_aa5237bff77628f4246858f3054e46fd);
+        
+    
+            marker_96f52584c576740ac35bc47113b73cdb.bindTooltip(
+                `<div>
+                     Barh, Bihar, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_81cca63600d6ebc73dc65acdd3669a50 = L.marker(
+                [25.37571, 86.474373],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_07b268299be8026b8240a4a4939f82aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_81cca63600d6ebc73dc65acdd3669a50.setIcon(icon_07b268299be8026b8240a4a4939f82aa);
+        
+    
+            marker_81cca63600d6ebc73dc65acdd3669a50.bindTooltip(
+                `<div>
+                     Munger, Bihar, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73f2babdade55cedcab31bccbf9d5fd5 = L.marker(
+                [26.540457, 88.719391],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_4e3b0a825595a52cd0223427cc346473 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_73f2babdade55cedcab31bccbf9d5fd5.setIcon(icon_4e3b0a825595a52cd0223427cc346473);
+        
+    
+            marker_73f2babdade55cedcab31bccbf9d5fd5.bindTooltip(
+                `<div>
+                     Jalpaiguri, West Bengal, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b66007a772a689c58cad62d993216e9 = L.marker(
+                [26.49189, 89.5271],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_05553d7b29c215ef4a72dfe6d1f2c4c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_9b66007a772a689c58cad62d993216e9.setIcon(icon_05553d7b29c215ef4a72dfe6d1f2c4c6);
+        
+    
+            marker_9b66007a772a689c58cad62d993216e9.bindTooltip(
+                `<div>
+                     Alipurduar, West Bengal, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3150fb8a637a5874ea34d46b3ab61a9 = L.marker(
+                [26.182245, 91.754723],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_d621df89a17481372517843fd3c9ba95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_b3150fb8a637a5874ea34d46b3ab61a9.setIcon(icon_d621df89a17481372517843fd3c9ba95);
+        
+    
+            marker_b3150fb8a637a5874ea34d46b3ab61a9.bindTooltip(
+                `<div>
+                     Paltan Bazaar, Guwahati, Assam, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_599b15fae0bbef448eb6e155a0799631 = L.marker(
+                [25.077787, 87.900375],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_2366f968e0147cbc7c5bd2c97b93dbb6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_599b15fae0bbef448eb6e155a0799631.setIcon(icon_2366f968e0147cbc7c5bd2c97b93dbb6);
+        
+    
+            marker_599b15fae0bbef448eb6e155a0799631.bindTooltip(
+                `<div>
+                     Manikchak, West Bengal, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c94fda48f55b739f2d687b3b72f3307c = L.marker(
+                [24.633568, 87.849251],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_75d81fcba9afb2767447b059380ad8dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_c94fda48f55b739f2d687b3b72f3307c.setIcon(icon_75d81fcba9afb2767447b059380ad8dd);
+        
+    
+            marker_c94fda48f55b739f2d687b3b72f3307c.bindTooltip(
+                `<div>
+                     Pakur, Jharkhand, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ade19ea080033a2994a3161ad411b3d7 = L.marker(
+                [24.618393, 88.024338],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_1d40efe8ed76d6b237f6f7882191b3ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_ade19ea080033a2994a3161ad411b3d7.setIcon(icon_1d40efe8ed76d6b237f6f7882191b3ea);
+        
+    
+            marker_ade19ea080033a2994a3161ad411b3d7.bindTooltip(
+                `<div>
+                     Suti, West Bengal, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd3552f584e9315d7834498ed73abded = L.marker(
+                [24.417534, 88.250343],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_aa29a466a259807aade3837801c9b22c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_fd3552f584e9315d7834498ed73abded.setIcon(icon_aa29a466a259807aade3837801c9b22c);
+        
+    
+            marker_fd3552f584e9315d7834498ed73abded.bindTooltip(
+                `<div>
+                     Lalgola, West Bengal, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5cbe26725106dfdc7fee015209893590 = L.marker(
+                [23.905445, 87.52462],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_87a38ec6ddea2e399e9d22007a16d0bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_5cbe26725106dfdc7fee015209893590.setIcon(icon_87a38ec6ddea2e399e9d22007a16d0bf);
+        
+    
+            marker_5cbe26725106dfdc7fee015209893590.bindTooltip(
+                `<div>
+                     Suri, West Bengal, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_805f3d6d0270a4adc2be3ba0825164c0 = L.marker(
+                [23.520399, 87.311897],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_0126a9e261c29e43261b1e349058aa67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_805f3d6d0270a4adc2be3ba0825164c0.setIcon(icon_0126a9e261c29e43261b1e349058aa67);
+        
+    
+            marker_805f3d6d0270a4adc2be3ba0825164c0.bindTooltip(
+                `<div>
+                     RL Infotechh & Solutions, Durgapur, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e60a597410bfde593f3af0aecf806074 = L.marker(
+                [23.427221, 87.287018],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_67a8f062e3bc3855c12ea67d3724bf5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_e60a597410bfde593f3af0aecf806074.setIcon(icon_67a8f062e3bc3855c12ea67d3724bf5e);
+        
+    
+            marker_e60a597410bfde593f3af0aecf806074.bindTooltip(
+                `<div>
+                     Barjora, West Bengal, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_410b6a22a225f673a009366db2b708d1 = L.marker(
+                [22.96051, 88.567406],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_041c5da416a8d8d642f89e416ab3cc0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_410b6a22a225f673a009366db2b708d1.setIcon(icon_041c5da416a8d8d642f89e416ab3cc0f);
+        
+    
+            marker_410b6a22a225f673a009366db2b708d1.bindTooltip(
+                `<div>
+                     Haringhata, West Bengal, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9d8dacbb9e999c7eb7c1a10d42e703e = L.marker(
+                [22.657402, 88.86718],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_1f8619f5bcb158e551c9fb3fc6be1994 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_d9d8dacbb9e999c7eb7c1a10d42e703e.setIcon(icon_1f8619f5bcb158e551c9fb3fc6be1994);
+        
+    
+            marker_d9d8dacbb9e999c7eb7c1a10d42e703e.bindTooltip(
+                `<div>
+                     Basirhat, West Bengal, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_684336694c5dfe3ca5e9dfa313a3c52e = L.marker(
+                [22.700474, 88.319069],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_0636f2ccdd629aa9cdb5feaa61f75b82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_684336694c5dfe3ca5e9dfa313a3c52e.setIcon(icon_0636f2ccdd629aa9cdb5feaa61f75b82);
+        
+    
+            marker_684336694c5dfe3ca5e9dfa313a3c52e.bindTooltip(
+                `<div>
+                     Konnagar, Mirpur, West Bengal, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ace7850d76f8aa02cd06785cb3029b57 = L.marker(
+                [22.430889, 87.321487],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_62a8a6fa18af6f6305742aee1459fbf1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_ace7850d76f8aa02cd06785cb3029b57.setIcon(icon_62a8a6fa18af6f6305742aee1459fbf1);
+        
+    
+            marker_ace7850d76f8aa02cd06785cb3029b57.bindTooltip(
+                `<div>
+                     Medinipur, West Bengal, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f72ad6e10fbf34d31ce3cc0ecc564f3 = L.marker(
+                [22.656015, 86.352882],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_9c4bea0adab81d9ac9036bfc3bed3510 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6f72ad6e10fbf34d31ce3cc0ecc564f3.setIcon(icon_9c4bea0adab81d9ac9036bfc3bed3510);
+        
+    
+            marker_6f72ad6e10fbf34d31ce3cc0ecc564f3.bindTooltip(
+                `<div>
+                     Jadugora, Jharkhand, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89099fca7b6d0501a37c658c4c5a5084 = L.marker(
+                [22.422455, 85.760651],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_6b1c8e0f7dbacbcd9ae32a53c671852f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_89099fca7b6d0501a37c658c4c5a5084.setIcon(icon_6b1c8e0f7dbacbcd9ae32a53c671852f);
+        
+    
+            marker_89099fca7b6d0501a37c658c4c5a5084.bindTooltip(
+                `<div>
+                     Jorapokhar, Jharkhand, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59be6cd0f97d29c11ddb4f34b10b5014 = L.marker(
+                [20.296059, 85.824539],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_40e77d5b0e0b8a1359cf32b627005c37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_59be6cd0f97d29c11ddb4f34b10b5014.setIcon(icon_40e77d5b0e0b8a1359cf32b627005c37);
+        
+    
+            marker_59be6cd0f97d29c11ddb4f34b10b5014.bindTooltip(
+                `<div>
+                     Bhubaneswar, Odisha, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24ac04e9b31ce707b9589f8ebbab270c = L.marker(
+                [19.354979, 84.986732],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_179be6d832ff2bdaac49124648135067 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_24ac04e9b31ce707b9589f8ebbab270c.setIcon(icon_179be6d832ff2bdaac49124648135067);
+        
+    
+            marker_24ac04e9b31ce707b9589f8ebbab270c.bindTooltip(
+                `<div>
+                     Chatrapur, Odisha, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9131249b2216ac6deebc3166063f907 = L.marker(
+                [11.623377, 92.726486],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_0ee0c27e8ade247c44304007be89a525 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_e9131249b2216ac6deebc3166063f907.setIcon(icon_0ee0c27e8ade247c44304007be89a525);
+        
+    
+            marker_e9131249b2216ac6deebc3166063f907.bindTooltip(
+                `<div>
+                     Port Blair, Andaman and Nicobar Islands, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df6c25557d2f10fe12c84084c39da575 = L.marker(
+                [18.106659, 83.395554],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_502d57168276495efa4b29b2f1f8bc3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_df6c25557d2f10fe12c84084c39da575.setIcon(icon_502d57168276495efa4b29b2f1f8bc3c);
+        
+    
+            marker_df6c25557d2f10fe12c84084c39da575.bindTooltip(
+                `<div>
+                     Vizianagaram, Andhra Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09fe3add162254a4d9414e60ce1df877 = L.marker(
+                [16.544893, 81.52124],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_7cf5c99267238aa1f9c18df486ffcf1e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_09fe3add162254a4d9414e60ce1df877.setIcon(icon_7cf5c99267238aa1f9c18df486ffcf1e);
+        
+    
+            marker_09fe3add162254a4d9414e60ce1df877.bindTooltip(
+                `<div>
+                     Bhimavaram, Andhra Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13ec61775e9e4f9ab7ebfbbd30dad820 = L.marker(
+                [15.812074, 80.355377],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_2a5cbed6e24c0e541dcaf5701ee9bcbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_13ec61775e9e4f9ab7ebfbbd30dad820.setIcon(icon_2a5cbed6e24c0e541dcaf5701ee9bcbd);
+        
+    
+            marker_13ec61775e9e4f9ab7ebfbbd30dad820.bindTooltip(
+                `<div>
+                     Chirala, Andhra Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9203a4e9f71d30d0a30f8d1225d8322c = L.marker(
+                [14.913181, 79.992981],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_1a373c1f67ee0e041d266bd70503e6dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_9203a4e9f71d30d0a30f8d1225d8322c.setIcon(icon_1a373c1f67ee0e041d266bd70503e6dd);
+        
+    
+            marker_9203a4e9f71d30d0a30f8d1225d8322c.bindTooltip(
+                `<div>
+                     Kavali, Andhra Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf015e4e274c986a65530713a432ef7d = L.marker(
+                [14.146319, 79.850388],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_fea513c0b025a577c01c6d85d39e0622 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_bf015e4e274c986a65530713a432ef7d.setIcon(icon_fea513c0b025a577c01c6d85d39e0622);
+        
+    
+            marker_bf015e4e274c986a65530713a432ef7d.bindTooltip(
+                `<div>
+                     Gudur, Andhra Pradesh, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33c54653e0f8dfdd84eb57695975c4ea = L.marker(
+                [12.946366, 79.959244],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_9dff0cee4f2daa40e202509a8db6737b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_33c54653e0f8dfdd84eb57695975c4ea.setIcon(icon_9dff0cee4f2daa40e202509a8db6737b);
+        
+    
+            marker_33c54653e0f8dfdd84eb57695975c4ea.bindTooltip(
+                `<div>
+                     Anakaputhur, Sriperumbudur, Tamil Nadu, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e8799a593ec88c416e12d52e88d8e6a = L.marker(
+                [10.92544, 79.838005],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_d8acbb871f053afa591931a4bcefb7f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_1e8799a593ec88c416e12d52e88d8e6a.setIcon(icon_d8acbb871f053afa591931a4bcefb7f3);
+        
+    
+            marker_1e8799a593ec88c416e12d52e88d8e6a.bindTooltip(
+                `<div>
+                     Karaikal, Puducherry, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_255278e0e57b19272aebdc5578d76869 = L.marker(
+                [9.823619, 77.986565],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_f735a67f19017d096be3026f52218404 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_255278e0e57b19272aebdc5578d76869.setIcon(icon_f735a67f19017d096be3026f52218404);
+        
+    
+            marker_255278e0e57b19272aebdc5578d76869.bindTooltip(
+                `<div>
+                     Tirumangalam, Tamil Nadu, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdf7aa02c0583bd9e6c710e5aac4d8e5 = L.marker(
+                [8.893212, 76.614143],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_eb3cd473fff3569b36fab625ba0dbc16 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "white", "prefix": "glyphicon"}
+            );
+            marker_bdf7aa02c0583bd9e6c710e5aac4d8e5.setIcon(icon_eb3cd473fff3569b36fab625ba0dbc16);
+        
+    
+            marker_bdf7aa02c0583bd9e6c710e5aac4d8e5.bindTooltip(
+                `<div>
+                     Kollam, Kerala, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_22f8d1477af619c35e9b3cb03885f869 = L.marker(
+                [9.383452, 76.574059],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_6fa1212c0e17040ae0d63d738f90cfd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_22f8d1477af619c35e9b3cb03885f869.setIcon(icon_6fa1212c0e17040ae0d63d738f90cfd8);
+        
+    
+            marker_22f8d1477af619c35e9b3cb03885f869.bindTooltip(
+                `<div>
+                     Thiruvalla, Kerala, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d787352c540a09163f2a7a951f3af35 = L.marker(
+                [10.311879, 76.331978],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_a9c1b9ff91272870b503939c7fe594ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_6d787352c540a09163f2a7a951f3af35.setIcon(icon_a9c1b9ff91272870b503939c7fe594ed);
+        
+    
+            marker_6d787352c540a09163f2a7a951f3af35.bindTooltip(
+                `<div>
+                     Chalakudy, Kerala, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af02fc3d473be063a7a6948b3d820a58 = L.marker(
+                [11.786253, 77.800781],
+                {}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+    
+            var icon_7b32b0ea3056d59185ce03b3b30fea03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_af02fc3d473be063a7a6948b3d820a58.setIcon(icon_7b32b0ea3056d59185ce03b3b30fea03);
+        
+    
+            marker_af02fc3d473be063a7a6948b3d820a58.bindTooltip(
+                `<div>
+                     Mettur, Tamil Nadu, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6bd50dd1c202b373a9e91614f08618e3 = L.polyline(
+                [[12.12, 76.68], [12.651805, 77.208946], [12.715035, 77.281296], [13.432515, 77.727478], [13.583274, 76.540154], [13.340881, 74.742142], [14.16704, 75.040298], [14.530457, 75.801094], [14.623801, 75.621788], [15.852792, 74.498703], [16.994444, 73.300003], [16.779877, 74.556374], [16.1667, 74.833298], [15.756595, 76.192696], [15.167409, 77.373627], [14.413745, 77.712616], [14.752805, 78.552757], [15.478569, 78.483093], [15.764501, 79.259491], [17.143908, 79.623924], [18.101904, 78.852074], [18.245655, 76.505356], [19.487707, 75.380768], [19.85306, 74.000633], [19.186354, 73.191948], [18.901457, 73.176132], [19.07609, 72.877426], [19.155001, 72.849998], [21.105001, 71.771645], [21.761524, 70.627625], [21.961946, 70.792297], [22.728392, 71.637077], [23.849325, 72.126625], [23.597969, 72.969818], [23.546757, 74.43383], [23.486839, 75.659157], [24.879999, 74.629997], [24.7945, 73.055], [24.882618, 72.858894], [25.771315, 73.323685], [28.440554, 74.493011], [30.525005, 75.890121], [32.041943, 75.405334], [30.172716, 77.299492], [29.854263, 77.888], [29.138407, 76.693245], [28.679079, 77.06971], [28.148735, 77.332024], [27.897551, 77.384117], [27.108416, 78.584602], [28.590361, 78.571762], [28.078636, 80.471588], [26.85, 80.949997], [25.989836, 79.450035], [22.744108, 77.736969], [21.045521, 75.801094], [21.04954, 76.532028], [20.388794, 78.120407], [21.190449, 81.28492], [21.25, 81.629997], [23.173939, 81.565125], [23.223047, 82.87056], [23.344315, 85.296013], [23.669296, 86.151115], [24.47438, 85.688744], [25.369179, 85.53006], [25.477585, 85.709091], [25.37571, 86.474373], [26.540457, 88.719391], [26.49189, 89.5271], [26.182245, 91.754723], [25.077787, 87.900375], [24.633568, 87.849251], [24.618393, 88.024338], [24.417534, 88.250343], [23.905445, 87.52462], [23.520399, 87.311897], [23.427221, 87.287018], [22.96051, 88.567406], [22.657402, 88.86718], [22.700474, 88.319069], [22.430889, 87.321487], [22.656015, 86.352882], [22.422455, 85.760651], [20.296059, 85.824539], [19.354979, 84.986732], [11.623377, 92.726486], [18.106659, 83.395554], [16.544893, 81.52124], [15.812074, 80.355377], [14.913181, 79.992981], [14.146319, 79.850388], [12.946366, 79.959244], [10.92544, 79.838005], [9.823619, 77.986565], [8.893212, 76.614143], [9.383452, 76.574059], [10.311879, 76.331978], [11.786253, 77.800781], [12.12, 76.68]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_ea1701c9d1189f7b5bdc0fc1a44850b6);
+        
+</script>
+</html>
